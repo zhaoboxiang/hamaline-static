@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--<meta name="renderer" content="webkit|ie-comp|ie-stand">-->
+  <!--<meta http-equiv="Pragma" content="no-cache">-->
+  <!--<meta http-equiv="Cache-Control" content="no-siteapp" />-->
+  <!--<meta name="keywords" content="熙隆 领航 炒金 蛤蟆 睿智 投资 汇市" />-->
+  <!--<meta name="description" content="熙隆领航专注投资者教育" />-->
+  <!--<meta name="robots" content="index,follow" />-->
+  <title>熙隆领航</title>
+  <link rel="stylesheet" href="./js/element-ui/lib/theme-default/index.css">
+  <link rel="stylesheet" href="./js/layui/css/layui.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/purchase.css">
+  <link rel="stylesheet" href="./css/tabs-card.css">
+  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+<div id="app">
+  <div class="home">
+    <div class="hamaheader">
+      <div class="login clearfix">
+        <div class="login-left">
+          <img src="./images/phone_icon.png" alt="">
+          <span class="phone-number">400-900-8230</span>
+          <img src="./images/wechat.png" alt="">
+          <img src="./images/wechat-hover.png" alt="">
+          <img src="./images/login-weixin.png" alt="" class="login-weixin">
+          <img src="./images/weibo.png" alt="">
+          <img src="./images/weibo-hover.png" alt="">
+          <img src="./images/login-weibo.png" alt="" class="login-weibo">
+        </div>
+        <div class="login-right">
+          <button class="sign-in">登陆</button>
+          <button class="sign-up">注册</button>
+          <!--<div class="user-info"></div>-->
+          <!--<div class="user-manage">-->
+            <!--<ul>-->
+              <!--<li>小黄人</li>-->
+              <!--<li>我的资料</li>-->
+              <!--<li>资金管理</li>-->
+              <!--<li>我的订单</li>-->
+              <!--<li>活动管理</li>-->
+              <!--<li>积分管理</li>-->
+            <!--</ul>-->
+          <!--</div>-->
+        </div>
+      </div>
+      <div class="main-nav">
+        <img src="./images/logo.png" alt="" class="logo">
+        <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+          <ul class="layui-tab-title">
+            <li class="layui-this">首页</li>
+            <li>直播</li>
+            <li>熙隆学院</li>
+            <li>蛤蟆线</li>
+            <li>商城</li>
+            <li>汇市社区</li>
+            <li>赚钱指南</li>
+            <li>招商加盟</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hamacontent">
+      <div class="hamabanner">
+        <img class="banner-left  animated zoomIn" src="./images/banner-left.png" alt="">
+        <div class="banner-right  animated bounceInRight">
+          <div class="text-left">
+            <span class="banner-right-text text-title">无极蛤蟆线</span>
+            <span class="banner-right-text text-font-2">炒金 <img class="font-2" src="./images/font-2.png" alt="">钱</span>
+          </div>
+          <div class="text-right">
+            <img src="./images/font-1.png" alt="">
+            <span class="banner-right-text text-font-3">门槛</span>
+          </div>
+          <div class="text-small">
+            <span class="text-small-s1">准司机 : 炒金/汇赚钱0门槛 ! 炒金/汇问题1站式解决 !</span><br/>
+            <span class="text-small-s2">新司机 : 2秒辨涨跌 ! 3秒找点位 ! 4步成赢家 !</span><br/>
+            <span class="text-small-s3">老司机 : 精准抄底 ! 波段操作 !</span><br/>
+          </div>
+          <div class="banner-btn">
+            <a class="banner-btn-01" href="#">免费试用</a>
+            <a class="banner-btn-02" href="#">使用说明</a>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <el-row :gutter="24">
+          <el-col :span="8" :offset="9"><span class="step-title" >三步解决炒金/汇难题</span></el-col>
+        </el-row>
+        <el-row class="step-info" :gutter="20">
+          <el-col :offset="3" :span="6">
+            <div class="first-step">
+              <img src="./images/step01.png" alt="">
+              <div class="step-text01">
+                <p>第 一 步</p>
+                <p>2秒辨涨跌</p>
+                <p>红线——多空分界线</p>
+                <p>低于红线，当天看跌</p>
+                <p>高于红线，当天看涨</p>
+                <p>红线连续上涨，趋势多头</p>
+                <p>趋势连续下跌，趋势看空</p>
+                <p>价格围绕红线，看震荡</p>
+                <p>做多多空 ! 一目了然</p>
+              </div>
+            </div>
+          </el-col>
+          <el-col :span="6">
+            <div class="second-step">
+              <img src="./images/step02.png" alt="">
+              <div class="step-text02">
+                <p>第 二 步</p>
+                <p>3秒找点位</p>
+                <p>当天蛤蟆线自动生成</p>
+                <p>价格显示一目了然</p>
+                <p>蛤线代表支撑线</p>
+                <p>蟆线代表压力线</p>
+              </div>
+            </div>
+          </el-col>
+          <el-col :span="6">
+            <div class="third-step">
+              <img src="./images/step03.png" alt="">
+              <div class="step-text03">
+                <p>第 三 步</p>
+                <p>何时买，何时卖</p>
+                <p>多头上行突破蟆系线，大胆挺近追多</p>
+                <p>空头下跌破蛤系线，勇敢开仓去追空</p>
+                <p>买进多头遇蟆线，价格见顶宜出掉</p>
+                <p>吃进空头遇蛤线，价格见底宜快跑</p>
+                <p>红色多空分界线，多也可以空也可</p>
+              </div>
+            </div>
+          </el-col>
+        </el-row>
+        <ul class="icon-dot">
+          <li><img src="./images/icon-dot.png" alt=""></li>
+          <li><img src="./images/icon-dot-b.png" alt=""></li>
+          <li><img src="./images/icon-dot-b.png" alt=""></li>
+          <li><img src="./images/icon-dot-b.png" alt=""></li>
+          <li><img src="./images/icon-dot-b.png" alt=""></li>
+          <li><img src="./images/icon-dot-b.png" alt=""></li>
+          <li><img src="./images/icon-dot-b.png" alt=""></li>
+        </ul>
+        <div class="step-banner">
+          <div class="step-banner-text">
+            <p>无极蛤蟆线是个什么 "鬼" ？</p>
+            <p>蛤蟆线是能帮助你挣钱的线，它不仅提示买卖信号，而且准确率极高，是一款黄金、外汇投资必备武器.......</p>
+          </div>
+          <div class="step-banner-video">
+            <embed
+                width="700"
+                height="400"
+                autostart="false"
+                src="https://player.letvcdn.com/lc07_p/201706/08/09/43/0945/newplayer/bcloud.swf?uu=0mj83kxobd&vu=46373332aa&pu=cb46bc25fc&auto_play=0&gpcflag=1&lang=zh_CN">
+            </embed>
+            <a href="javascript:;" class="free-btn">免费试用</a>
+          </div>
+        </div>
+      </div>
+      <div class="hamaintro">
+        <el-row :gutter="24" class="title-margin">
+          <el-col :span="8" :offset="10"><span class="intro-title" >无极蛤蟆线特点</span></el-col>
+        </el-row>
+        <el-row :gutter="24">
+          <el-col :span="6" :offset="4" class="icons-1">
+            <span>一眼看涨跌</span>
+          </el-col>
+          <el-col :span="6" :offset="2" class="icons-2">
+            <span>精准提示做多/空信号</span>
+          </el-col>
+          <el-col :span="6" :offset="2" class="icons-3">
+            <span>准确率高达86.5%</span>
+          </el-col>
+          <el-col :span="6" :push="2" class="icons-4">
+            <span>提前预知下一个交易日买卖点位</span>
+          </el-col>
+
+        </el-row>
+        <el-row :gutter="24" class="hamaline-detail">
+          <el-col :span="6" :offset="6" class="hamaline-gif">
+            <img src="./images/hamapic.gif" alt="">
+            <button class="free-btn-2">免费试用</button>
+          </el-col>
+        </el-row>
+        <el-row :gutter="24">
+          <el-col :span="24" class="hamaline-report">
+            <img src="./images/corner.png" alt="" class="corner animated fadeIn">
+            <img src="./images/dotted-line.png" alt="" class="dotted-line animated zoomIn">
+            <img src="./images/fadein-left.png" alt="" class="fadein-left animated fadeInLeft">
+            <img src="./images/fadein-right.png" alt="" class="fadein-right animated fadeInRight">
+            <button class="free-btn-2 animated fadeInUp">免费试用</button>
+            <button class="free-btn-3 animated fadeInUp">查看监测报告</button>
+          </el-col>
+        </el-row>
+      </div>
+      <div class="purchase">
+        <el-row :gutter="24">
+          <el-col :span="8" :offset="11"><span class="purchase-title" >在线购买</span></el-col>
+        </el-row>
+        <el-row :gutter="24">
+          <el-col :span="6" :offset="3">
+            <img src="./images/product.png" alt="" class="product">
+          </el-col>
+          <el-col :span="6" :offset="2" class="purchase-card">
+            <h2 class="product-title">《无极蛤蟆线》系统一套</h2>
+            <div class="layui-tab layui-tab-card">
+              <ul class="layui-tab-title">
+                <li class="layui-this">三个月</li>
+                <li>六个月</li>
+                <li>终身使用</li>
+              </ul>
+              <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">
+                  <span class="price-text">价格: <span class="purchase-card-price">￥998</span></span>
+                  <span>原价3888</span>
+                  <button class="pro-contact"></button>
+                  <div class="purchase-card-btn">
+                    <button class="purchase-now">立即购买</button><br/>
+                    <button class="sub-btn">下载软件</button>
+                    <button class="sub-btn">使用说明</button>
+                  </div>
+                </div>
+                <div class="layui-tab-item">
+                  <span class="price-text">价格: <span class="purchase-card-price">￥1998</span></span>
+                  <span>原价5888</span>
+                  <button class="pro-contact"></button>
+                  <div class="purchase-card-btn">
+                    <button class="purchase-now">立即购买</button><br/>
+                    <button class="sub-btn">下载软件</button>
+                    <button class="sub-btn">使用说明</button>
+                  </div>
+                </div>
+                <div class="layui-tab-item">
+                  <span class="price-text">价格: <span class="purchase-card-price">￥3998</span></span>
+                  <span>原价9888</span>
+                  <button class="pro-contact"></button>
+                  <div class="purchase-card-btn">
+                    <button class="purchase-now">立即购买</button><br/>
+                    <button class="sub-btn">下载软件</button>
+                    <button class="sub-btn">使用说明</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </el-col>
+        </el-row>
+      </div>
+    </div>
+    <div class="hamafooter">
+      <el-row :gutter="24" class="footer-main">
+        <el-col :span="1" :push="11">
+          <img src="./images/footer/weixin.jpg" alt="" class="weixin-code">
+        </el-col>
+        <el-col :span="5" :offset="10" class="footer-icons">
+          <img src="./images/footer/weibo_icon.png" alt="">
+          <img src="./images/footer/weixin_icon.png" alt="">
+          <img src="./images/footer/qq_icon.png" alt="">
+          <img src="./images/footer/apple_icon.png" alt="">
+          <el-col :span="10" class="footer-info">
+            <a href="javascript:;">关于熙隆</a>
+            <a href="javascript:;">网站条款</a>
+            <a href="javascript:;">帮助中心</a>
+            <a href="javascript:;">联系我们</a>
+            <a href="javascript:;">友情链接</a>
+            <a href="javascript:;">金融机构</a>
+            <a href="javascript:;">赞助商</a>
+          </el-col>
+        </el-col>
+
+      </el-row>
+      <el-row :gutter="24" class="official-icon">
+        <el-col :span="20" :offset="5">
+          <div>
+            <a href="javascript:;"><img src="./images/footer/safe%20(2).png" alt=""></a>
+            <a href="https://v.pinpaibao.com.cn/cert/site/?site=xilongfx.com&at=business" target="_blank"><img src="./images/footer/safe%20(3).png" alt=""></a>
+            <a href="https://ss.knet.cn/verifyseal.dll?sn=e17011744030066312ryzv000000&ct=df&a=1&pa=0.806648563195429" target="_blank"><img src="./images/footer/safe%20(4).png" alt=""></a>
+            <a href="https://www.yunaq.com/new_analytics/report/login/?site=xilongfx.com" target="_blank"><img src="./images/footer/safe%20(5).png" alt=""></a>
+            <a href="http://qwrz.baidu.com/id/5415d99ca9a8533d7a246e5ba3c39fef"><img src="./images/footer/safe%20(6).png" alt=""></a>
+            <a href="https://tongji.baidu.com/web/welcome/login" target="_blank"><img src="./images/footer/safe%20(7).png" alt=""></a>
+          </div>
+        </el-col>
+      </el-row>
+    </div>
+  </div>
+</div>
+</body>
+<script src="./js/vue.js"></script>
+<script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="./js/layui/layui.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+<script src="./js/element-ui/lib/index.js"></script>
+<script>
+
+  //选项卡
+  layui.use('element', function(){
+    var element = layui.element();
+
+    //一些事件监听
+    element.on('tab(demo)', function(data){
+      console.log(data);
+    });
+  });
+ 
+  var app = new Vue({
+    data: {
+      shade: true,
+      controls: false
+    }
+  }).$mount('#app')
+</script>
+</html>

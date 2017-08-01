@@ -1,0 +1,234 @@
+@charset "UTF-8";
+.hamaheader {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+}
+
+.login {
+  position: relative;
+  background: #ffffff;
+  height: 40px;
+  border-top: 2px solid #1768B3; }
+.login-weixin {
+  position: absolute;
+  top: 90%;
+  left: 21%;
+  transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 1;
+ display: none;
+}
+.login-weibo {
+  position: absolute;
+  top: 90%;
+  left: 430px;
+  transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 1;
+  display: none;
+}
+
+.login:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.user-info {
+  position: absolute;
+  right: 5px;
+  bottom: 25px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  background: url("../images/user1.png") no-repeat center;
+}
+.user-manage {
+  position: absolute;
+  width: 150px;
+  height: 250px;
+  top: 45px;
+  right: -20px;
+  z-index: 4;
+  box-shadow: 2px 2px 7px 2px #8391a5;
+  background: #fff;
+  display: none;
+}
+.user-manage li {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.user-wrap {
+  height: 60px;
+  width: 40px;
+  position: relative;
+  top: -38px;
+  z-index: 4;
+}
+.user-wrap:hover .user-manage {
+display: block;
+}
+.user-manage li:hover {
+background: #8391a5;
+}
+.user-manage li:nth-of-type(1) {
+text-align: left;
+font-size: 18px;
+color: #000;
+padding-left: 30px;
+}
+.sign-in, .sign-up {
+display: none;
+height: 30px;
+width: 60px;
+outline: none;
+border: 1px solid #1768B3;
+cursor: pointer;
+font-size: 14px;
+font-family: "宋体",Arial,sans-serif;}
+
+.sign-in {
+position: absolute;
+border-radius: 15px;
+right: 48px;
+bottom: 0;
+z-index: 2;
+background: #1768B3;
+color: #fff; }
+
+.sign-up {
+position: absolute;
+border-bottom-right-radius: 15px;
+border-top-right-radius: 15px;
+right: 0;
+bottom: 0;
+background: #fff;
+color: #1768B3; }
+
+.login-left {
+float: left;
+margin-left: 12%;
+height: 30px;
+margin-top: 12px;
+cursor: pointer; }
+.login-left .phone-number {
+  position: relative;
+  top: 0px;
+  color: #1768B3; }
+  .login-left .phone-number:after {
+    content: '';
+    border-right: 1px solid;
+    margin: 0 10px; }
+.login-left img:nth-of-type(3) {
+position: absolute;
+top: 24px;
+left: 367px;
+transform: translate3d(-50%, -50%, 0);
+-ms-transform: translate(-50%, -50%);
+display: none;
+}
+.login-left img:nth-of-type(6) {
+position: absolute;
+top: 24px;
+left: 394px;
+transform: translate3d(-50%, -50%, 0);
+-ms-transform: translate(-50%, -50%);
+display: none;
+}
+.login-right {
+float: right;
+top: 30px;
+margin-right: 19%;
+margin-top: 8px;
+position: relative; }
+
+.main-nav {
+background: rgba(255, 255, 255, 0.6);
+height: 80px;
+position: relative; }
+
+.main-nav .layui-tab-title {
+font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+position: relative;
+left: 0;
+height: 40px;
+white-space: nowrap;
+font-size: 16px;
+border: none;
+transition: all .2s;
+-webkit-transition: all .2s;
+text-align: center;
+color: #000;
+margin-left: 10%;
+}
+.main-nav .layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
+border-bottom: 3px solid #1768B3;
+}
+.main-nav .layui-tab {
+margin: 0;
+}
+.main-nav .layui-tab-title li {
+line-height: 80px;
+font-size: 16px;
+}
+.main-nav .layui-tab-title li:nth-child(2).layui-this::before {
+ content: '';
+ background: url("../images/fire_icon.png") no-repeat 87% 43%;
+ display: block;
+ width: 15px;
+ height: 22px;
+ position: absolute;
+ left: 61px;
+ top: -15px;
+}
+.main-nav .layui-tab-title li:nth-child(2) {
+background: url("../images/fire_icon.png") no-repeat 87% 43%;
+}
+.main-nav .layui-tab-brief>.layui-tab-title .layui-this {
+line-height: 0;
+color: #1768B3;
+}
+.logo {
+position: absolute;
+top: 50%;
+/*left: 50%;*/
+  transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate(-50%, -50%);
+  left: 20%; }
+
+.el-tabs__header {
+  border: none; }
+  .el-tabs__header .el-tabs__nav-wrap {
+    line-height: 7; }
+
+.el-tabs__item {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  color: #333;
+  font-size: 16px; }
+  .el-tabs__item:nth-child(3) {
+    background: url("../images/fire_icon.png") no-repeat right center; }
+
+.el-tabs__active-bar {
+  bottom: 4px; }
+.el-icon-arrow-left:before {
+  content: "\e601";
+  position: relative;
+  top: 18px;
+}
+.el-icon-arrow-right:before {
+  content: "\e601";
+  position: relative;
+  top: 18px;
+}
+.el-icon-arrow-right:before {
+  content: "\e602";
+  position: relative;
+  top: 18px;
+}
+
+/*# sourceMappingURL=header.css.map */

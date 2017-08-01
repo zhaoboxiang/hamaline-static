@@ -1,0 +1,73 @@
+@charset "UTF-8";
+.purchase {
+  position: relative;
+  margin-top: 100px; }
+  .purchase .purchase-title {
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 1px solid #EAEAEA; }
+    .purchase .purchase-title::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      -ms-transform: translate(-50%, -50%);
+      content: '';
+      border-bottom: 10px solid #1768B3;
+      display: block;
+      height: 15px;
+      width: 80px;
+      position: relative;
+      top: 18px; }
+
+.tabs-card {
+  margin-top: 100px; }
+  .tabs-card .product-wrap {
+    line-height: 3; }
+    .tabs-card .product-wrap .product-title {
+      font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+      font-size: 25px; }
+
+.purchase-now, .sub-btn {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  width: 260px;
+  height: 40px;
+  border-radius: 3px;
+  background: #E54616;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  /*margin-top: 10px;*/ }
+  .purchase-now:active, .sub-btn:active {
+    background: rgba(229, 70, 22, 0.8);
+    text-shadow: 1px 1px 5px #000; }
+
+.sub-btn {
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  background: #F5E5E0;
+  border: 1px solid #E54616;
+  color: #E54616;
+  margin: 20px 0; }
+  .sub-btn:last-child {
+    margin-left: 18px; }
+
+.pro-contact {
+  background: url("../images/btn-bg.png") no-repeat #176BB9 center;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+  top: 10px;
+  left: 20px; }
+  .pro-contact:active {
+    background-color: rgba(23, 107, 185, 0.9); }
+  .purchase .purchase-card-btn {
+    margin-top: 35px;
+  }
+
+/*# sourceMappingURL=purchase.css.map */

@@ -1,0 +1,55 @@
+.hamafooter {
+  margin-top: 150px;
+  width: 100%; }
+  .hamafooter .footer-main {
+    height: 140px;
+    border-top: 1px solid #F0F0F0;
+    position: relative;
+    background: rgb(75,75,75); }
+    .hamafooter .footer-main .footer-icons {
+      margin-top: 30px; }
+      .hamafooter .footer-main .footer-icons img {
+        margin-left: 28px; }
+    .hamafooter .footer-main .weixin-code {
+      position: absolute;
+      z-index: 99;
+      top: -65px;
+      left: 44%;
+      width: 75px;
+      max-width: none;
+      height: 75px;
+      transform: scale(1);
+      transform-origin: top right;
+      opacity: 1;
+      border-radius: .25rem;
+      -webkit-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+    .hamafooter .footer-main .weixin>img:first-child:hover {
+      width: 32px; height: 32px;
+      background: url('../images/footer/footer_sprites.png') -63px -63px;
+      /*opacity: 0;*/
+      color: #fff;
+    }
+    .hamafooter .footer-main .footer-info {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      -ms-transform: translate(-50%, -50%);
+      top: 100px; }
+      .hamafooter .footer-main .footer-info a {
+        font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+        margin-left: 50px;
+        font-size: 14px;
+        color: #999; }
+  .hamafooter .official-icon {
+    height: 105px;
+    border-top: 2px solid rgb(37,37,37);
+    line-height: 105px;
+    background: rgb(49,49,49);}
+    .hamafooter .official-icon img {
+      margin-top: 20px;
+      margin-left: 55px;}
+
+/*# sourceMappingURL=footer.css.map */

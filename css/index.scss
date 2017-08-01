@@ -1,0 +1,430 @@
+@import "common";
+//banner-img
+.banner {
+  margin-top: 37px;
+}
+.hamabanner {
+  background: url("./images/bg.png") no-repeat;
+  height: 580px;
+  .zoomIn {
+    animation-delay: 0s;
+  }
+}
+//banner图左边图片样式
+.banner-left {
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  animation-duration: 1.5s
+}
+//banner图右边的文字样式
+.banner-right {
+  position: absolute;
+  right: 25%;
+  top: 135px;
+  width: 500px;
+  -webkit-animation-delay: .5s;
+  -moz-animation-delay: .5s;
+  -o-animation-delay: .5s;
+  animation-delay: .5s;
+  .banner-right-text {
+    @include font;
+    font-size: 65px;
+    font-weight: bold;
+    color: #fff;
+    .font-2 {
+      position: relative;
+      top: 15px;
+    }
+  }
+  .text-left {
+    border-right: 3px solid #fff;
+    width: 325px;
+    height: 155px;
+    .text-font-2 {
+      position: relative;
+      top: 50px;
+    }
+  }
+  .text-right {
+    position: absolute;
+    top: 0;
+    right: -100px;
+    .text-font-3 {
+      position: relative;
+      bottom: 20px;
+    }
+  }
+  .text-title {
+    font-family: "Microsoft YaHei UI Light",Arial,sans-serif;
+    position: absolute;
+    top: 0;
+    right: 45%;
+    font-size: 45px;
+    font-weight: normal;
+    margin: 10px 0;
+  }
+  .text-small {
+    font-family: "Microsoft YaHei UI Light",Arial,sans-serif;
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    margin-left: 120px;
+    padding: 55px 0;
+    .text-small-s1 {
+      display: inline-block;
+      padding: 5px;
+      border-top: 1px solid rgb(122,122,122);
+      border-bottom: 1px solid rgb(122,122,122);
+    }
+    .text-small-s2 {
+      @extend .text-small-s1;
+      margin-top: 10px;
+      margin-left: 30px;
+    }
+    .text-small-s3 {
+      @extend .text-small-s1;
+      @extend .text-small-s2;
+      margin-left: 65px;
+    }
+  }
+  .banner-btn {
+    position: relative;
+    top: 10px;
+    left: 170px;
+    .banner-btn-01 {
+      width: 130px;
+      height: 40px;
+      display: inline-block;
+      border: 2px solid;
+      color: #fff;
+      border-radius: 20px;
+      font-size: 20px;
+      text-align: center;
+      line-height: 40px;
+      font-family: "Microsoft YaHei",Arial,sans-serif;
+      &:hover {
+        background: #fff;
+        color: #155EA1;
+        border-color: #fff;
+        transition: all .5s ease-out;
+      }
+    }
+    .banner-btn-02 {
+      @extend .banner-btn-01;
+      margin-left: 40px;
+      &:hover {
+        @extend .banner-btn-01:hover;
+      }
+    }
+  }
+}
+
+//step
+.step {
+  position: relative;
+  margin-top: 100px;
+  //标题
+  .step-title {
+    @include title-text;
+    &::after {
+      @include title-bottom;
+    }
+  }
+  //步骤信息
+  .step-info {
+    margin-top: 80px;
+    .first-step {
+      position: relative;
+      overflow: hidden;
+      width: 330px;
+      height: 450px;
+      border: 1px solid transparent;
+      border-radius: 15px;
+      z-index: 1;
+      .step-text01 {
+        @include vertical-middle;
+        font-family: "Microsoft YaHei UI Light",Arial,sans-serif;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        line-height: 2;
+        top: 122%;
+        left: 48%;
+        cursor: pointer;
+        transition: top .5s ease;
+        //透明遮罩
+        &::after {
+          @include shade;
+        }
+        &:hover {
+          top: 41%;
+        }
+        p:nth-child(1) {
+          line-height: 1;
+          font-size: 25px;
+          font-weight: bold;
+        }
+        p:nth-child(2) {
+          font-size: 20px;
+          &:after {
+            @include title-underline; //下划线样式
+          }
+        }
+      }
+    }
+    .second-step {
+      @extend .first-step;
+      .step-text02 {
+        @extend .step-text01;
+        top: 113%;
+        &::after {
+          @include shade;
+        }
+        &:hover {
+          top: 31%;
+        }
+        p:nth-child(1) {
+          line-height: 1;
+          font-size: 25px;
+          font-weight: bold;
+        }
+        p:nth-child(2) {
+          font-size: 20px;
+          &:after {
+            @include title-underline; //下划线样式
+          }
+        }
+      }
+    }
+    .third-step {
+      @extend .first-step;
+      .step-text03 {
+        @extend .step-text01;
+        top: 116%;
+        &::after {
+          @include shade;
+        }
+        &:hover {
+          top: 34%;
+        }
+        p:nth-child(1) {
+          line-height: 1;
+          font-size: 25px;
+          font-weight: bold;
+        }
+        p:nth-child(2) {
+          font-size: 20px;
+          &:after {
+            @include title-underline; //下划线样式
+          }
+        }
+      }
+    }
+  }
+  //右边小圆点
+  .icon-dot {
+    position: absolute;
+    right: 20px;
+    top: 12%;
+    li {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.step-banner {
+  @include font;
+  background: url("./images/snowbanner.png") no-repeat;
+  height: 650px;
+  margin-top: 80px;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  line-height: 3;
+  .step-banner-text {
+    p:nth-child(1) {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    p:nth-child(2) {
+      &:before {
+        content: url("./images/quote-left.png");
+        height: 29px;
+        position: relative;
+        bottom: 30px;
+        right: 20px;
+      }
+      &:after {
+        content: url("./images/quote-right.png");
+        height: 29px;
+        position: relative;
+        top: 30px;
+        left: 20px;
+      }
+    }
+  }
+  .step-banner-video {
+    background: url("./images/reat.png") no-repeat center center;
+    height: 242px;
+    margin-top: 230px;
+    video {
+      background:transparent url('./images/video.png') 50% 50% no-repeat;
+      /*background-size: cover;*/
+      position: relative;
+      top: -210px;
+      left: 80px;
+      &:after {
+        @include shade;
+      }
+    }
+    .free-btn {
+      display: inline-block;
+      width: 150px;
+      height: 35px;
+      line-height: 35px;
+      border: 2px solid #fff;
+      color: #155EA1;
+      position: relative;
+      top: -155px;
+      left: -19%;
+      background: #fff;
+      border-radius: 20px;
+      &:hover {
+        background: #155EA1;
+        color: #fff;
+        border-color: #155EA1;
+        transition: all .5s ease-out;
+      }
+    }
+  }
+}
+.video-shade {
+  @include vertical-middle;
+  z-index:9999;
+  width:700px;
+  height: 390px;
+  top: 78%;
+  opacity: 0.8;
+  background: #000;
+}
+.video-shade img {
+  @include vertical-middle;
+}
+
+//intro
+.title-margin {
+  margin: 100px 0;
+  //标题
+  .intro-title {
+    @include title-text;
+    &::after {
+      @include title-bottom;
+    }
+  }
+}
+//图标
+.icons-1 {
+  @include icons;
+  &::before {
+    background: url("./images/pic1-h.png");
+  }
+  &::after {
+    background: url("./images/pic1.png");
+  }
+}
+.icons-2 {
+  @include icons;
+  &::before {
+    background: url("./images/pic2-h.png");
+  }
+  &::after {
+    background: url("./images/pic2.png");
+  }
+}
+.icons-3 {
+  @include icons;
+  &::before {
+    background: url("./images/pic3-h.png");
+  }
+  &::after {
+    background: url("./images/pic3.png");
+  }
+}
+.icons-4 {
+  @include icons;
+  span:nth-child(1) {
+    display: inline-block;
+    width: 350px;
+    height: 0;
+    text-align: left;
+  }
+  &::before {
+    background: url("./images/pic4-h.png");
+  }
+  &::after {
+    background: url("./images/pic4.png");
+  }
+}
+
+//蛤蟆线演示
+.hamaline-detail {
+  margin: 200px 0;
+  .hamaline-gif {
+    display: inline-block;
+    content: "";
+    width: 913px;
+    height: 459px;
+    background: url("./images/reat4.png") no-repeat;
+    position: relative;
+    img {
+      @include vertical-middle;
+    }
+    .free-btn-2 {
+      @include vertical-middle;
+      @include font;
+      top: 110%;
+      display: inline-block;
+      width: 150px;
+      height: 40px;
+      font-size: 15px;
+      text-align: center;
+      line-height: 35px;
+      border: 2px solid #155EA1;
+      color: #155EA1;
+      background: #fff;
+      border-radius: 20px;
+      &:hover {
+        background: #155EA1;
+        color: #fff;
+        transition: all .5s ease-out;
+        border: none;
+      }
+      $color: #155EA1;
+      &:active {
+        background: rgba($color,.9);
+      }
+    }
+  }
+}
+$color: #155EA1;
+.hamaline-report {
+  background: url("./images/banner3.png") no-repeat;
+  height: 700px;
+  img {
+    @include vertical-middle;
+  }
+  .fadein-left {
+    top: 33%;
+    left: 38%;
+  }
+  .fadein-right {
+    top: 23%;
+    left: 43%;
+  }
+  .corner {
+    top: 19%;
+    left: 26%;
+  }
+}

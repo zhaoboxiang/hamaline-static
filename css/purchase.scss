@@ -1,0 +1,83 @@
+@import "common";
+.purchase {
+  position: relative;
+  margin-top: 100px;
+  //标题
+  .purchase-title {
+    @include title-text;
+    &::after {
+      @include title-bottom;
+    }
+  }
+}
+.product {
+
+}
+.tabs-card {
+  margin-top: 100px;
+  .product-wrap {
+    line-height: 3;
+    .product-title {
+      @include font;
+      font-size: 25px;
+    }
+  }
+}
+.purchase-now {
+  @include font;
+  width: 220px;
+  height: 40px;
+  border-radius: 3px;
+  background: #E54616;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  /*margin-top: 10px;*/
+  &:active {
+    background: rgba(#E54616,.8);
+    text-shadow:1px 1px 5px #000;
+  }
+}
+.sub-btn {
+  @extend .purchase-now;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  background: #F5E5E0;
+  border: 1px solid #E54616;
+  color: #E54616;
+  margin: 20px 0;
+  &:last-child {
+    margin-left: 18px;
+  }
+}
+.tabs-card span:nth-of-type(1) {
+  @include font;
+  font-size: 20px;
+  &:after {
+    content: '￥998';
+    font-size: 30px;
+    font-weight: bold;
+    color: #E54616;
+    vertical-align: middle;
+  }
+}
+.tabs-card span:nth-of-type(2) {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+  margin-left: 20px;
+}
+.pro-contact {
+  background: url("./components/images/btn-bg.png") no-repeat #176BB9 center;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+  top: 10px;
+  left: 20px;
+  &:active {
+    background-color: rgba(#176BB9,.9);
+  }
+}

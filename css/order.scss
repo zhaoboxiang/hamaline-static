@@ -1,0 +1,122 @@
+@import "common";
+.hamaorder {
+  padding-top: 150px;
+}
+//右边面包屑导航样式
+.order-step span {
+  @include font;
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+.order-step1 {
+  background: url("./images/order/order-step1.png") no-repeat;
+}
+.order-step2 {
+  background: url("./images/order/order-step2.png") no-repeat;
+  margin-left: -12px;
+  color: #fff;
+}
+.order-step3 {
+  background: url("./images/order/order-step3.png") no-repeat;
+  margin-left: -17px;
+}
+//订单标题样式
+.order-title {
+  @include font;
+  font-size: 25px;
+  font-weight: bold;
+  color: #E54616;
+  margin-right: 30px;
+}
+.bread-text {
+  font-size: 15px;
+  color: #A9A9A9;
+}
+.order-detail {
+  border: 1px solid;
+  height: 100px;
+}
+.detail-title  {
+  background: #8391a5;
+}
+//订单表格
+.gridtable {
+  @include font;
+  width: 100%;
+  font-size:11px;
+  color:#333333;
+  border: 1px solid #C4C4C4;
+  border-collapse: collapse;
+  margin-top: 100px;
+}
+.gridtable th {
+  width: 110px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #F7F7F7;
+}
+.gridtable td {
+  height: 100px;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+  .edit {
+    color: #1768B3;
+  }
+}
+.gridtable>tr {
+  td:nth-child(4){
+    color: #E54616;
+  }
+  th:nth-child(3)::after {
+    content: '';
+    background: url("./images/order/wenhao_icon.png") no-repeat right center;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+  }
+}
+//产品图片样式
+.product-info {
+  img {
+    @include vertical-middle;
+    top: 55%;
+    left: 17%;
+  }
+  span {
+    @include vertical-middle;
+    top: 55%;
+    left: 22%;
+  }
+}
+//确认购买 按钮
+.decide {
+  margin-top: 20px;
+  .validate-text {
+    @include font;
+    font-size: 17px;
+    color: #BE2713;
+  }
+  .order-btn {
+    @include font;
+    width: 170px;
+    height: 50px;
+    border-radius: 3px;
+    background: #E54616;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    margin-left: 130px;
+    margin-top: 10px;
+    &:active {
+      background: rgba(#E54616,.8);
+      text-shadow:1px 1px 5px #000;
+    }
+  }
+}
+//弹层
+@include layer;

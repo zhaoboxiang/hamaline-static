@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="keywords" content="熙隆 领航 炒金 蛤蟆 睿智 投资 汇市" />
+  <meta name="description" content="熙隆领航专注投资者教育" />
+  <meta name="robots" content="index,follow" />
+  <title>订单详情</title>
+  <link rel="stylesheet" href="./js/element-ui/lib/theme-default/index.css">
+  <link rel="stylesheet" href="./js/layui/css/layui.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/order.css">
+  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+<div id="app">
+  <div class="order">
+    <div class="hamaheader">
+      <div class="login clearfix">
+        <div class="login-left">
+          <img src="./images/phone_icon.png" alt="">
+          <span class="phone-number">400-900-8230</span>
+          <img src="./images/wechat.png" alt="">
+          <img src="./images/wechat-hover.png" alt="">
+          <img src="./images/login-weixin.png" alt="" class="login-weixin">
+          <img src="./images/weibo.png" alt="">
+          <img src="./images/weibo-hover.png" alt="">
+          <img src="./images/login-weibo.png" alt="" class="login-weibo">
+        </div>
+        <div class="login-right">
+          <button class="sign-in">登陆</button>
+          <button class="sign-up">注册</button>
+          <div class="user-wrap">
+            <div class="user-info"></div>
+            <div class="user-manage">
+              <ul>
+                <li>小黄人</li>
+                <li>我的资料</li>
+                <li>资金管理</li>
+                <li>我的订单</li>
+                <li>活动管理</li>
+                <li>积分管理</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-nav">
+        <img src="./images/logo.png" alt="" class="logo">
+        <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+          <ul class="layui-tab-title">
+            <li class="layui-this">首页</li>
+            <li>直播</li>
+            <li>熙隆学院</li>
+            <li>蛤蟆线</li>
+            <li>商城</li>
+            <li>汇市社区</li>
+            <li>赚钱指南</li>
+            <li>招商加盟</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hamaorder">
+      <el-row :gutter="24">
+        <el-col :span="6" :offset="3">
+          <span class="order-title">确认订单</span>
+          <span class="bread-text">首页 > 蛤蟆线 > 确认订单</span>
+        </el-col>
+        <el-col :span="6" :offset="6" class="order-step">
+          <span class="order-step1">选择商品</span>
+          <span class="order-step2">确认订单</span>
+          <span class="order-step3">提交成功</span>
+        </el-col>
+      </el-row>
+      <el-row :gutter="24">
+        <el-col :span="17" :offset="3">
+          <form action="">
+            <table class="gridtable">
+              <tr>
+                <th>产品名称</th><th>有效期</th><th>绑定MT4账号</th><th>价格(熙币)</th>
+              </tr>
+              <tr>
+                <td class="product-info">
+                  <img src="./images/order/order-product.png" alt="">
+                  <span>《无极蛤蟆线》</span>
+                </td>
+                <td>
+                  <select name="date" class="date-select">
+                    <option value="">请选择</option>
+                    <option value="0" selected>三个月</option>
+                    <option value="1">六个月</option>
+                    <option value="2">终身使用</option>
+                  </select>
+                </td>
+                <td >
+                  <div class="edit">
+                    <span>88888</span><a href="javascript:;"> 修改</a>
+                  </div>
+                  <div class="save" style="display: none">
+                    <input type="text" value="" name=""/> <a href="javascript:;">确定</a>
+                  </div>
+                </td>
+                <td class="xibi">998.0</td>
+              </tr>
+            </table>
+          </form>
+        </el-col>
+        <el-col :span="6" :offset="16" class="decide">
+          <div class="validate-text">熙币不足，还需 <span>998.0</span>个熙币，请充值！</div>
+          <input type="submit" name="" value="确认购买" class="order-btn">
+          <input type="submit" name="" value="去充值" class="recharge-btn" style="visibility: hidden">
+        </el-col>
+      </el-row>
+      <!--// 弹层-->
+      <div style="display: none" class="box-target">
+        <div class="notice">
+          <span>恭喜你，购买成功！</span>
+          <img src="./images/order/correct_icon.png" alt="">
+          <button class="download">点击下载软件</button>
+          <button class="contact">联系客服</button>
+          <a class="box-close" href="./index.html" target="_self"></a>
+          <span>请联系客服获取软件序列号</span>
+        </div>
+      </div>
+    </div>
+    <div class="hamafooter">
+      <el-row :gutter="24" class="footer-main">
+        <!--<el-col :span="1" :push="11">-->
+          <!--<img src="./images/footer/weixin.jpg" alt="" class="weixin-code">-->
+        <!--</el-col>-->
+        <el-col :span="5" :offset="10" class="footer-icons">
+          <a href="javascript:;">
+            <img src="./images/footer/weibo_icon.png" alt="">
+          </a>
+          <a href="javascript:;"  class="weixin">
+            <img src="./images/footer/weixin_icon.png" alt="">
+            <img src="./images/footer/weixin.jpg" alt="" class="weixin-code">
+          </a>
+          <a href="javascript:;">
+            <img src="./images/footer/qq_icon.png" alt="">
+          </a>
+          <a href="javascript:;">
+            <img src="./images/footer/apple_icon.png" alt="">
+          </a>
+        </el-col>
+        <el-col :span="10" class="footer-info">
+          <a href="javascript:;">关于熙隆</a>
+          <a href="javascript:;">网站条款</a>
+          <a href="javascript:;">帮助中心</a>
+          <a href="javascript:;">联系我们</a>
+          <a href="javascript:;">友情链接</a>
+          <a href="javascript:;">金融机构</a>
+          <a href="javascript:;">赞助商</a>
+        </el-col>
+      </el-row>
+      <el-row :gutter="24" class="official-icon">
+        <el-col :span="20" :offset="5">
+          <div>
+            <a href="javascript:;"><img src="./images/footer/safe%20(2).png" alt=""></a>
+            <a href="https://v.pinpaibao.com.cn/cert/site/?site=xilongfx.com&at=business" target="_blank"><img src="./images/footer/safe%20(3).png" alt=""></a>
+            <a href="https://ss.knet.cn/verifyseal.dll?sn=e17011744030066312ryzv000000&ct=df&a=1&pa=0.806648563195429" target="_blank"><img src="./images/footer/safe%20(4).png" alt=""></a>
+            <a href="https://www.yunaq.com/new_analytics/report/login/?site=xilongfx.com" target="_blank"><img src="./images/footer/safe%20(5).png" alt=""></a>
+            <a href="http://qwrz.baidu.com/id/5415d99ca9a8533d7a246e5ba3c39fef"><img src="./images/footer/safe%20(6).png" alt=""></a>
+            <a href="https://tongji.baidu.com/web/welcome/login" target="_blank"><img src="./images/footer/safe%20(7).png" alt=""></a>
+          </div>
+        </el-col>
+      </el-row>
+    </div>
+  </div>
+</div>
+
+</body>
+<script type="text/javascript" src="./js/vue.js"></script>
+<script src="./js/element-ui/lib/index.js"></script>
+<script type="text/javascript" src="./js/layui/layui.js"></script>
+<script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+<script type="text/javascript">
+  $(function () {
+    //编辑MT4账号
+    $('.edit').click(function () {
+      $('.edit').hide();
+      $('.save').show();
+    });
+    //遮罩显示和隐藏
+    $('.order-btn').click(function () {
+//      $('.box-target').show();
+      layui.use(['layer', 'form'], function(){
+        var layer = layui.layer
+          ,form = layui.form();
+        layer.msg('余额不足', {icon:5});
+      });
+    });
+  })
+
+  //选项卡
+  layui.use('element', function(){
+    var element = layui.element();
+
+    //一些事件监听
+    element.on('tab(demo)', function(data){
+      console.log(data);
+    });
+  });
+  //vue.js
+  new Vue({
+
+  }).$mount('#app')
+</script>
+</html>
